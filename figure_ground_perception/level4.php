@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>PIS Level1</title>
+		<title>FGP Level 4</title>
 		<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 		 <meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -80,16 +80,26 @@ document.getElementById('times').value =newHour+':'+newMin+':'+newSec;
 			  border:2px solid #f00;
 			  
 			}
+			img{
+				width:40%;
+				height:40%;
+			}
 			.labelno{
-				border:2px solid black;	
+				border:2px solid black;
+				
 			}
 			.images {
     display: inline-block;
 	width:30%;
-	height:100px;
-	margin: 0px;
-	
+	height:50%;
+	margin: 5px;
 			} 
+			.ipm {
+    display: inline-block;
+	width:70%;
+	height:50%;
+	margin: 5px;
+			}
 		</style>
 	</head>
 	<body onload="startTime();">
@@ -100,75 +110,42 @@ include("../sbcategory.php");
 ?>
 			</div>
 			<div class="col-sm-6" style="width:60%">
-<br>				<div class="1 level">
-					<!-- LEVEL 1 STARTS-->
-					<br>
-						<h3 class="labelno">Level 1</h3>
-						<br>
-							 <form action="level1.php" method="POST">
-						<p>  IDENTIFY   THE   SYMBOL</p>
-						 				
-						<h3>1.	IDENTIFY THE SYMBOL POINTING DOWNWARDS</h3>
+<br><br>					<div class="3 21 level">																						<!-- LEVEL 3 STARTS-->
+						<h3 class="labelno">Level 4</h3>
+						<form action="level4.php" method="POST">
+							<p>1.	Find odd one present in this </p>
+						<img src="images/fgp/fgpl41.png" width="50%" height="30%"/><br>
 						
-						<div class="images"><marquee direction = "up" behavior="alternate"><label>
-						  <input type="radio" name="pisL11" value="small" />
-						 <img src="images/pisL11.png" width="70%" height="20%"   />
-						</label></marquee></div>
-						<div class="images" ><marquee direction = "left" behavior="alternate"><label>
-						  <input type="radio" name="pisL11" value="small" />
-						  <img src="images/pisL12.png"  />
-						</label></marquee></div> 
-						<div class="images"><marquee direction = "right" behavior="alternate"><label>
-						  <input type="radio" name="pisL11" value="small" />
-						  <img src="images/pisL13.png"  />
-						</label></marquee></div>
-						<div class="images"><marquee direction = "down" behavior="alternate"><label>
-						  <input type="radio" name="pisL11" value="small" />
-						  <img src="images/pisL14.png" width="80%" height="20%" />
-						</label></marquee></div><input type="hidden" name="t1"/>  &nbsp &nbsp <h1 class="btn btn-primary">Next Question</h1>
-						 <br>
-						 <br>
-
-						<p>2. WHICH SYMBOL IS POINTING TOWARDS THE LEFT SIDE </p>
-						<label>
-						  <input type="radio" name="pisL12" value="small" />
-						  <img src="images/pisL15.png" width="50%" height="30%"/>
-						</label>
-						<label>
-						  <input type="radio" name="pisL12" value="small" />
-						  <img src="images/pisL16.png" width="50%" height="30%"/>
-						</label>
-						<label>
-						  <input type="radio" name="pisL12" value="small" />
-						  <img src="images/pisL17.png" width="50%" height="30%"/>
-						</label>
-						<label>
-						  <input type="radio" name="pisL12" value="small" />
-						  <img src="images/pisL18.png" width="50%" height="30%"/>
-						</label><br>
-						 <br>
+						  <input type="radio" name="fgpl41" value="a" /> 1
+						  <input type="radio" name="fgpl41" value="b" /> 7
+						  <input type="radio" name="fgpl41" value="c" /> 4
+						 					
+<br><br>
+						  
+						  <p>2.	Find odd one present in this </p>
+						<img src="images/fgp/fgpl42.png"/><br>
+						
+						
+						  <input type="radio" name="fgpl42" value="a" option="234"/> 2  
+						  <input type="radio" name="fgpl42" value="b" /> 9
+						  <input type="radio" name="fgpl42" value="c" /> 6
+						  
+						   
+						   
+						   <p>3.	Find odd one present in this </p>
+						<img src="images/fgp/fgpl43.png" width="50%" height="30%"/><br>
+						
+						  <input type="radio" name="fgpl43" value="a" /> 1
+						  <input type="radio" name="fgpl43" value="b" /> 2
+						  <input type="radio" name="fgpl43" value="c" /> 3
+						  
+					
+						   <br><br>
 						 
-						 <p>3. WHICH SYMBOL IS POINTING TOWARDS RIGHT </p>
-						<label>
-						  <input type="radio" name="pisL13" value="small" />
-						  <img src="images/pisL19.png" width="50%" height="30%"/>
-						</label>
-						<label>
-						  <input type="radio" name="pisL13" value="small" />
-						  <img src="images/pisL110.png" width="50%" height="30%"/>
-						</label>
-						<label>
-						  <input type="radio" name="pisL13" value="small" />
-						  <img src="images/pisL111.png" width="50%" height="30%"/>
-						</label>
-						<label>
-						  <input type="radio" name="pisL13" value="small" />
-						  <img src="images/pisL112.png" width="50%" height="30%"/>
-						</label><br>
-						 <br>
-					 </div>																						<!-- LEVEL 1 ENDS-->																					<!-- LEVEL 2 ENDS-->
-					<input type="hidden" name="timer" id="times"/>
-						 <button type="submit" name="lvl1pis" onclick="stopTimer();" class="btn btn-primary">Next</button><br><br>
+
+					</div>																						<!-- LEVEL 3 ends-->
+						 <input type="hidden" name="timer" id="times"/>
+						 <button type="submit" name="lvl3fgpl" onclick="stopTimer();" class="btn btn-primary">Next</button><br><br>
 						</form>	
 <?php
 // After uploading to online server, change this connection accordingly
@@ -178,26 +155,27 @@ if (mysqli_connect_errno())
   {
   echo "The Connection was not established: " . mysqli_connect_error();
   }
-if(isset($_POST['lvl1pis']))
+if(isset($_POST['lvl3fgpl']))
 {
-	$cat="Position_in_space";
-	$q1=$_POST['pis11'];
-	$q2=$_POST['pis21'];
-	$q3=$_POST['pis31'];
+		$cat="figure_ground_perception";
+	$q1=$_POST['fgpl41'];
+	$q2=$_POST['fgpl42'];
+	$q3=$_POST['fgpl43'];
+
 	$times=$_POST['timer'];
-	$query="insert into level1 (category,q1,q2,q3,q4,q5,timetaken)value('$cat','$q1','$q2','$q3','null','null','$times')";
+	$query="insert into level4 (category,q1,q2,q3,q4,q5,timetaken)value('$cat','$q1','$q2','$q3','null','null','$times')";
 	echo $query;
 	$run=mysqli_query($con,$query);
 	if($run){
-		echo "<script>alert('Level 1 Succesfully Submitted')</script>";
-		echo "<script>window.open('level2.php','_self')</script>";
+		echo "<script>alert('Level 4 Succesfully Submitted')</script>";
+		echo "<script>window.open('level5.php','_self')</script>";
 
 		}
 }
 ?>
 						</div>						<!-- LEVEL 1 ENDS-->
 					  
-						
+				</div>			
 			
 			<div class="col-sm-3" id="rightbar2" style="width:20%">
 			<br><br>
